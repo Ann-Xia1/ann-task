@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = parseFloat(prompt('输入边的长度'));
+        var b = parseFloat(prompt('输入边的长度'));
+        var c = parseFloat(prompt('输入边的长度'));
+        if (a + b > c && b + c > a && c + a > b) {
+            if (a == b && b == c) {
+                alert('等边三角形');
+            } else if (a == b || a == b || c == a ) {
+                alert('等腰三角形');
+            } else {
+                alert('普通三角型');
+            }
+        } else {
+            alert ('不是三角型');
+        }
+    </script>
+</body>
+</html>
